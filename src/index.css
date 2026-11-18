@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 4rem;
+}
+
 :root {
   --font-sans: "Lato", ui-sans-serif, system-ui, sans-serif;
 
@@ -34,6 +39,7 @@ body {
 
 section[id] {
   scroll-margin-top: 4rem;
+  scroll-snap-align: start;
 }
 
 .navbar-bottom-line {
