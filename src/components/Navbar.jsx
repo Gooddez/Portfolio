@@ -3,7 +3,7 @@ const Navbar = () => {
 
     return (
         <header className="w-full">
-            <nav className="flex w-full items-center justify-center gap-5 px-6 py-5 font-(--font-sans) text-(--color-text) sm:gap-8">
+            <nav className="relative flex w-full items-center justify-center gap-5 px-6 py-5 font-(--font-sans) text-(--color-text) sm:gap-8">
                 {sections.map((section) => (
                     <a
                         key={section}
@@ -13,6 +13,10 @@ const Navbar = () => {
                         {section}
                     </a>
                 ))}
+                <span
+                    aria-hidden="true"
+                    className="navbar-bottom-line pointer-events-none absolute inset-x-0 bottom-0 h-px"
+                />
             </nav>
         </header>
     );

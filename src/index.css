@@ -31,3 +31,14 @@
 body {
   background-color: var(--color-background);
 }
+
+.navbar-bottom-line {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-border) 20%,
+    var(--color-border-strong) 50%,
+    var(--color-border) 80%,
+    transparent 100%
+  );
+}
