@@ -32,6 +32,10 @@ body {
   background-color: var(--color-background);
 }
 
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
 .navbar-bottom-line {
   background: linear-gradient(
     90deg,

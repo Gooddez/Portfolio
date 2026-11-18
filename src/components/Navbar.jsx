@@ -2,8 +2,8 @@ const Navbar = () => {
     const sections = ["Home", "About", "Skills", "Projects", "Contact"];
 
     return (
-        <header className="w-full">
-            <nav className="relative flex w-full items-center justify-center gap-5 px-6 py-5 font-(--font-sans) text-(--color-text) sm:gap-8">
+        <header className="fixed inset-x-0 top-0 z-50 h-16 w-full bg-(--color-background)/90 backdrop-blur-md">
+            <nav className="relative flex h-full w-full items-center justify-center gap-5 px-6 font-(--font-sans) text-(--color-text) sm:gap-8">
                 {sections.map((section) => (
                     <a
                         key={section}
