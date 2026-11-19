@@ -1,3 +1,5 @@
+import Education from "./Education";
+
 const About = () => {
     return (
         <section
@@ -35,6 +37,7 @@ const About = () => {
                         make digital products more practical and approachable.
                     </p>
                 </div>
+                <Education />
             </div>
         </section>
     );

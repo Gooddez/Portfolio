@@ -39,7 +39,7 @@ body {
 
 section[id] {
   scroll-margin-top: 4rem;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 
 .navbar-bottom-line {
@@ -52,3 +52,4 @@ section[id] {
     transparent 100%
   );
 }
+
