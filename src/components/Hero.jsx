@@ -3,7 +3,7 @@ const Hero = () => {
         <section
             id="home"
             aria-label="Introduction"
-            className="flex min-h-[calc(100vh-4rem)] w-full flex-col items-center justify-center gap-10 px-6 py-12 sm:px-10 lg:flex-row lg:gap-16"
+            className="flex min-h-[calc(100svh-4rem)] w-full flex-col items-center justify-center gap-10 px-6 py-12 sm:px-10 lg:flex-row lg:gap-16"
         >
             <img
                 src="/images/profile.webp"

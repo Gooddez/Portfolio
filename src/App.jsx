@@ -9,9 +9,9 @@ import Footer from "./components/Footer";
 function App() {
   
   return (
-    <main className="pt-16">
-      <Navbar></Navbar>
+    <main>
       <Hero />
+      <Navbar />
       <About />
       <Skills />
       <Projects />
