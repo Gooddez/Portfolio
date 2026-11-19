@@ -44,6 +44,15 @@ body {
   background-color: var(--color-background);
 }
 
+/* Hide the browser scrollbar; SectionNavigation provides the visual position cue. */
+html {
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
 section[id] {
   scroll-margin-top: 4rem;
   /* scroll-snap-align: start; */
