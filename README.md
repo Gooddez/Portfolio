@@ -1,16 +1,41 @@
-# React + Vite
+# Nattachai Kaewchum — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio built with React, Vite, and Tailwind CSS. It introduces my background and skills, highlights selected projects, and provides ways to get in touch.
 
-Currently, two official plugins are available:
+## Sections
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home** — introduction and profile photo
+- **About** — background and education
+- **Skills** — technologies and tools
+- **Projects** — selected work with links to source repositories
+- **Contact** — email, phone, and LinkedIn
 
-## React Compiler
+The site also includes a sticky section navbar, smooth scrolling, and a compact dot navigation that tracks scroll position.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run locally
 
-## Expanding the ESLint configuration
+Requirements: Node.js 22 and npm.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm ci
+npm run dev
+```
+
+Vite prints the local address when the development server starts.
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+The production site is generated in `dist/`. Run `npm run lint` to check the source files.
+
+## Deploy to GitHub Pages
+
+The workflow in `.github/workflows/deploy.yml` installs dependencies, builds the site, and deploys it to GitHub Pages whenever changes are pushed to `master`. Pull requests run the build without publishing. You can also start the workflow manually from the repository’s **Actions** tab.
+
+For the first deployment, open **Settings → Pages** in the repository and set the build and deployment source to **GitHub Actions**. The Vite build uses `/Portfolio/` as its base path on GitHub Pages and `/` during local development.
+
+After a successful deployment, the site is available at <https://gooddez.github.io/Portfolio/>.

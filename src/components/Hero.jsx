@@ -6,7 +6,7 @@ const Hero = () => {
             className="flex min-h-[calc(100svh-4rem)] w-full flex-col items-center justify-center gap-10 px-6 py-12 sm:px-10 lg:flex-row lg:gap-16"
         >
             <img
-                src="/images/profile.webp"
+                src={`${import.meta.env.BASE_URL}images/profile.webp`}
                 alt="Profile portrait"
                 className="aspect-square w-3/5 rounded-full object-cover object-top sm:w-1/2 lg:w-[25%]"
             />
